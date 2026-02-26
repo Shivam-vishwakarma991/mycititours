@@ -57,7 +57,7 @@ export default function CustomCursor() {
 
     return (
         <motion.div
-            className="custom-cursor fixed top-0 left-0 rounded-full flex items-center justify-center pointer-events-none z-50 transition-colors"
+            className="custom-cursor hidden md:flex fixed top-0 left-0 rounded-full items-center justify-center pointer-events-none z-50 transition-colors"
             variants={variants}
             animate={cursorType}
             transition={{ type: 'tween', ease: 'backOut', duration: 0.15 }}

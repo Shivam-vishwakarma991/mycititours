@@ -26,7 +26,7 @@ export default function Hero() {
                 className="absolute top-1/4 left-1/4 w-96 h-96 bg-softgold/20 rounded-full blur-[100px] z-0"
             ></motion.div>
 
-            <div className="container mx-auto px-6 md:px-12 relative z-10 flex flex-col items-start pt-24 text-sand">
+            <div className="container mx-auto px-6 md:px-12 relative z-10 flex flex-col items-start pt-16 md:pt-24 text-sand">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.9, duration: 0.8 }}
-                    className="text-lg md:text-xl font-body text-sand/90 max-w-2xl mb-12 leading-relaxed"
+                    className="text-lg md:text-xl font-body text-sand/90 max-w-2xl mb-8 md:mb-12 leading-relaxed"
                 >
                     All-inclusive cab tours with 100+ modern vehicles, professional drivers, and 24x7 support across Karnataka, Kerala & Tamil Nadu.
                 </motion.p>

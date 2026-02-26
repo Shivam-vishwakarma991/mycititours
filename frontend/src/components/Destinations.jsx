@@ -17,24 +17,34 @@ export default function Destinations() {
             const sections = gsap.utils.toArray('.destination-card');
 
             if (sections.length > 0) {
-                gsap.to(destinationsRef.current, {
+                const scrollTween = gsap.to(destinationsRef.current, {
                     x: () => -(destinationsRef.current.scrollWidth - window.innerWidth),
                     ease: "none",
                     scrollTrigger: {
                         trigger: containerRef.current,
                         pin: true,
                         scrub: 1,
-                        // Increased scroll distance to slow down the animation significantly
-                        end: () => "+=" + (destinationsRef.current.scrollWidth * 1.5),
+                        // Adjusted speed to be 20% faster than previous 1.5 multiplier
+                        end: () => "+=" + (destinationsRef.current.scrollWidth * 1.25),
                         invalidateOnRefresh: true,
                     }
                 });
 
-                // Image Parallax within Containers
+                // Image Parallax tied to Horizontal Scroll
                 gsap.utils.toArray('.img-parallax').forEach(img => {
                     gsap.fromTo(img,
                         { y: "-15%" },
-                        { y: "15%", scrollTrigger: { trigger: img, scrub: true } }
+                        {
+                            y: "15%",
+                            ease: "none",
+                            scrollTrigger: {
+                                trigger: img.closest('.destination-card'),
+                                containerAnimation: scrollTween,
+                                start: "left right",
+                                end: "right left",
+                                scrub: true
+                            }
+                        }
                     );
                 });
             }
@@ -44,8 +54,8 @@ export default function Destinations() {
     }, []);
 
     return (
-        <section className="bg-sand text-charcoal py-24 overflow-hidden" id="destinations">
-            <div className="container mx-auto px-6 md:px-12 mb-16 text-center">
+        <section className="bg-sand text-charcoal py-12 md:py-24 overflow-hidden" id="destinations">
+            <div className="container mx-auto px-6 md:px-12 mb-8 md:mb-16 text-center">
                 <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
                     Explore <span className="text-forest">Top Destinations</span>
                 </h2>
@@ -55,9 +65,9 @@ export default function Destinations() {
             </div>
 
             {/* Horizontal Scroll Trigger Container */}
-            <div ref={containerRef} className="relative h-screen w-full overflow-hidden flex flex-col justify-center">
+            <div ref={containerRef} className="relative h-[80vh] md:h-screen w-full overflow-hidden flex flex-col justify-center">
                 {/* Horizontal Moving Track */}
-                <div ref={destinationsRef} className="flex gap-8 px-6 md:px-12 w-max pr-[20vw] md:pr-[30vw] items-center">
+                <div ref={destinationsRef} className="flex gap-4 md:gap-8 px-6 md:px-12 w-max pr-[10vw] md:pr-[30vw] items-center">
                     {destinations.map((dest) => (
                         <div
                             key={dest.id}
@@ -100,8 +110,8 @@ export default function Destinations() {
                 </div>
             </div>
 
-            <div className="text-center mt-24">
-                <a href="#packages" className="inline-block bg-transparent border-2 border-forest text-forest px-10 py-4 rounded-full font-body font-semibold uppercase tracking-wider hover:bg-forest hover:text-sand transition-colors duration-300">
+            <div className="text-center mt-12 md:mt-24">
+                <a href="#packages" className="inline-block bg-transparent border-2 border-forest text-forest px-8 md:px-10 py-3 md:py-4 rounded-full font-body font-semibold uppercase tracking-wider hover:bg-forest hover:text-sand transition-colors duration-300">
                     Customize Your Itinerary
                 </a>
             </div>

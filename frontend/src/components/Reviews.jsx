@@ -4,9 +4,9 @@ import { reviews } from '../data/mock';
 
 export default function Reviews() {
     return (
-        <section className="bg-sand text-charcoal py-24" id="reviews">
+        <section className="bg-sand text-charcoal py-12 md:py-24" id="reviews">
             <div className="container mx-auto px-6 md:px-12">
-                <div className="text-center mb-16">
+                <div className="text-center mb-10 md:mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ export default function Reviews() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-20">
                     {reviews.map((review, i) => (
                         <motion.div
                             key={review.id}
@@ -58,7 +58,7 @@ export default function Reviews() {
                 </div>
 
                 {/* Stats Footer */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                     {[
                         { metric: '10,000+', label: 'Happy Travelers' },
                         { metric: '4.9/5', label: 'Average Rating' },

@@ -3,10 +3,10 @@ import { MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer className="bg-[#1a1a1c] text-sand py-20 relative overflow-hidden">
+        <footer className="bg-[#1a1a1c] text-sand py-12 md:py-20 relative overflow-hidden">
             <div className="absolute top-0 right-1/4 w-[30vw] h-[30vw] bg-forest/20 rounded-full blur-[100px] pointer-events-none"></div>
 
-            <div className="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div className="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-10 md:mb-16">
                 <div>
                     <a href="#" className="flex items-center gap-2 mb-6 cursor-pointer">
                         <div className="bg-terracotta p-2 rounded-full text-sand">

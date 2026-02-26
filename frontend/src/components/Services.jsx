@@ -21,9 +21,9 @@ const services = [
 
 export default function Services() {
     return (
-        <section className="py-24 bg-sand text-charcoal" id="services">
+        <section className="py-12 md:py-24 bg-sand text-charcoal" id="services">
             <div className="container mx-auto px-6 md:px-12">
-                <div className="text-center mb-16">
+                <div className="text-center mb-10 md:mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export default function Services() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-10 md:mb-16">
                     {services.map((service, index) => (
                         <motion.div
                             key={service.title}

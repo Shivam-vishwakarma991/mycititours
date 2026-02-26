@@ -21,9 +21,9 @@ const fleetFeatures = [
 
 export default function WhyChooseUs() {
     return (
-        <section className="py-24 bg-[#fdfaf6] text-charcoal border-t border-forest/5" id="why-us">
+        <section className="py-12 md:py-24 bg-[#fdfaf6] text-charcoal border-t border-forest/5" id="why-us">
             <div className="container mx-auto px-6 md:px-12">
-                <div className="text-center mb-16">
+                <div className="text-center mb-10 md:mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-20">
                     {features.map((feature, i) => (
                         <motion.div
                             key={feature.title}
@@ -62,13 +62,13 @@ export default function WhyChooseUs() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="bg-gradient-to-r from-forest to-[#1a2f19] rounded-3xl p-10 md:p-14 text-sand shadow-2xl relative overflow-hidden"
+                    className="bg-gradient-to-r from-forest to-[#1a2f19] rounded-3xl p-6 md:p-14 text-sand shadow-2xl relative overflow-hidden"
                 >
                     <div className="absolute top-0 right-0 w-64 h-64 bg-terracotta/20 rounded-full blur-[80px] -mr-20 -mt-20"></div>
 
-                    <h3 className="text-3xl font-heading font-bold mb-10 text-center text-softgold">Every Vehicle is Equipped With</h3>
+                    <h3 className="text-2xl md:text-3xl font-heading font-bold mb-8 md:mb-10 text-center text-softgold">Every Vehicle is Equipped With</h3>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-10 relative z-10">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 md:gap-x-6 gap-y-8 md:gap-y-10 relative z-10">
                         {fleetFeatures.map((ff, i) => (
                             <motion.div
                                 key={ff.text}
