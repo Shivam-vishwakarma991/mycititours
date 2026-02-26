@@ -73,16 +73,19 @@ export default function Packages() {
                                     </ul>
                                 </div>
 
-                                <motion.button
+                                <motion.a
+                                    href={`https://wa.me/918269794013?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: ${pkg.duration}\nDestination: ${pkg.name} Package (${pkg.price})`)}`}
+                                    target="_blank"
+                                    rel="noreferrer"
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
                                     className={`w-full py-4 rounded-xl font-bold transition-colors shadow-md flex justify-center items-center gap-2 mt-auto ${pkg.popular
-                                            ? 'bg-gradient-to-r from-terracotta to-softgold text-sand hover:opacity-90'
-                                            : 'bg-forest text-sand hover:bg-forest/90'
+                                        ? 'bg-gradient-to-r from-terracotta to-softgold text-sand hover:opacity-90'
+                                        : 'bg-forest text-sand hover:bg-forest/90'
                                         }`}
                                 >
                                     Book This Package
-                                </motion.button>
+                                </motion.a>
                             </div>
                         </motion.div>
                     ))}
@@ -102,7 +105,7 @@ export default function Packages() {
                         </p>
                     </div>
                     <a
-                        href="https://wa.me/918269794013?text=I want to create a custom South India tour package"
+                        href={`https://wa.me/918269794013?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`}
                         target="_blank"
                         rel="noreferrer"
                         className="bg-forest text-sand px-8 py-4 rounded-full font-bold whitespace-nowrap hover:bg-terracotta transition-colors shadow-lg"

@@ -19,7 +19,7 @@ export const destinations = [
     id: 3,
     name: "Ooty & Coonoor",
     description: "Discover the heritage toy train and sprawling tea gardens.",
-    image: "https://images.unsplash.com/photo-1628126235206-526019ea81ee", // Ooty specific
+    image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d", // Ooty specific
     duration: "3-4 Days",
     highlights: ["Toy Train", "Tea Gardens", "Doddabetta Peak"]
   },
@@ -27,7 +27,7 @@ export const destinations = [
     id: 4,
     name: "Mysore & Wayanad",
     description: "A perfect blend of royal history and wildlife adventure.",
-    image: "https://images.unsplash.com/photo-1588661704285-d7fb9d6f35ad", // Mysore palace
+    image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d", // Mysore palace
     duration: "4-5 Days",
     highlights: ["Mysore Palace", "Wildlife Safari", "Spice Gardens"]
   },
@@ -35,7 +35,7 @@ export const destinations = [
     id: 5,
     name: "Pondicherry",
     description: "Relax in the serene beaches and colonial French Quarters.",
-    image: "https://images.unsplash.com/photo-1620802051773-1bb0708579cf", // Pondicherry
+    image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d", // Pondicherry
     duration: "2-3 Days",
     highlights: ["French Quarter", "Auroville", "Beach Walks"]
   },
@@ -43,7 +43,7 @@ export const destinations = [
     id: 6,
     name: "Kodaikanal",
     description: "Misty mountains, serene lakes and beautiful pine forests.",
-    image: "https://images.unsplash.com/photo-1591129208035-71887e1faff6", // Kodaikanal
+    image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d", // Kodaikanal
     duration: "2-3 Days",
     highlights: ["Kodai Lake", "Pillar Rocks", "Pine Forests"]
   }

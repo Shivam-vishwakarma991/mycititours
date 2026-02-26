@@ -91,7 +91,7 @@ export default function Hero() {
                 <a href="tel:+918269794013" className="w-14 h-14 bg-forest/90 backdrop-blur text-sand rounded-full flex items-center justify-center hover:bg-forest transition-colors shadow-lg shadow-forest/20 hover:scale-110 active:scale-95">
                     <Phone size={24} />
                 </a>
-                <a href="https://wa.me/918269794013?text=Hi! I want to plan a South India trip" target="_blank" rel="noreferrer" className="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-colors shadow-lg shadow-green-500/20 hover:scale-110 active:scale-95">
+                <a href={`https://wa.me/918269794013?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" className="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-colors shadow-lg shadow-green-500/20 hover:scale-110 active:scale-95">
                     <MessageCircle size={24} />
                 </a>
             </div>

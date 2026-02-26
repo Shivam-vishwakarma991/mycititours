@@ -56,9 +56,14 @@ export default function Services() {
                             <p className="text-charcoal/70 font-body mb-8 leading-relaxed">
                                 {service.description}
                             </p>
-                            <button className="flex items-center gap-2 text-forest font-semibold group-hover:text-terracotta transition-colors">
+                            <a
+                                href={`https://wa.me/918269794013?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: ${service.title}`)}`}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="flex items-center gap-2 text-forest font-semibold group-hover:text-terracotta transition-colors w-max"
+                            >
                                 Book Now <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
-                            </button>
+                            </a>
                         </motion.div>
                     ))}
                 </div>
