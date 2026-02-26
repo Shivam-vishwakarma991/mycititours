@@ -53,6 +53,7 @@ export const packagesData = [
   {
     id: 1,
     name: "Kerala Complete",
+    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944",
     duration: "6 Days / 5 Nights",
     price: "₹28,999",
     pricePerPerson: "per person",
@@ -70,6 +71,7 @@ export const packagesData = [
   {
     id: 2,
     name: "Karnataka Heritage",
+    image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d",
     duration: "5 Days / 4 Nights",
     price: "₹24,999",
     pricePerPerson: "per person",
@@ -87,6 +89,7 @@ export const packagesData = [
   {
     id: 3,
     name: "Tamil Nadu Temple Trail",
+    image: "https://images.unsplash.com/photo-1544256221-dbb153b81eb7",
     duration: "7 Days / 6 Nights",
     price: "₹32,999",
     pricePerPerson: "per person",
