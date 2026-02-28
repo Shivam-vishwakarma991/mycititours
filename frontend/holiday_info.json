@@ -1,0 +1,98 @@
+[
+  {
+    "id": "MysoreOneDayCityTourPrivateVehicleFourPersonMaxbySedan",
+    "name": "Mysore One Day City Tour Private Vehicle  Four  Person Max  by Sedan",
+    "duration": "1 Day Tour",
+    "price": "₹935327",
+    "image": "https://www.mycititours.com/admin/assets/img/holiday/main/Mysore_Palace_Image1.jpg",
+    "inclusions": [
+      "Print E-Ticket",
+      "My Bookings",
+      "24x7 Customer support: +91 9353273108",
+      "Agent Login",
+      "Cancellation Policies"
+    ],
+    "itinerary": [
+      {
+        "title": "Day 1 One Day Mysore City Tour",
+        "desc": "Full-day Mysore Local Sightseeing Tour\n\tDuration: 9 to 11 hours\n\tTour by Private Cab (not shared with others)\n\tPickup & Drop: Mysore Hotel / Home\n\tPlaces Covered: Chamundeshwari Temple, Mysore Wax Museum, Mysore Maharaja Palace, St. Philomena Church, Mysore Zoological Park, Sri Ranganathaswamy Templ"
+      }
+    ]
+  },
+  {
+    "id": "MysoreCoorgTourPackagePrivateCabSedan",
+    "name": "MysoreCoorgTourPackagePrivateCabSedan",
+    "duration": "3 Days",
+    "price": "₹935327",
+    "image": "https://images.unsplash.com/photo-1620067980661-823023447990?q=80&w=2070",
+    "inclusions": [
+      "Print E-Ticket",
+      "My Bookings",
+      "24x7 Customer support: +91 9353273108",
+      "Agent Login",
+      "Cancellation Policies"
+    ],
+    "itinerary": [
+      {
+        "title": "Day 1 Mysore",
+        "desc": "Pick up at Mysore Bus Station/Railway Station.\nVisit Chamundi Hills, Philomena’s Church, Palace, Zoo, Tippu’s Palace, Srirangapatnam.\nAt dusk, visit Brindavan Gardens. \"Mysore Late-Night Stay;"
+      },
+      {
+        "title": "Day 2 Coorg",
+        "desc": "Check out and depart for Coorg. On the way, visit Cauvery Nisarghadhama, the Golden Temple.\nCheck into a hotel upon arrival in the city.\nVisit Raja’s Seat, Omkareswara Temple, Abbey Falls, Coorg Late-Night Stay;"
+      },
+      {
+        "title": "Day 3 Mysore",
+        "desc": "Pay a visit to Bhagamandala, Talacauvery.\nDepart for Mysore in the afternoon.\nVisit Mysore Palace illuminations.\nLater, drop off at Mysore Bus Station/Railway Station."
+      }
+    ]
+  },
+  {
+    "id": "MysoreOneDayCityTourGroupTour",
+    "name": "Mysore One Day City Tour Group Tour",
+    "duration": "1 Day Tour",
+    "price": "₹935327",
+    "image": "https://images.unsplash.com/photo-1620067980661-823023447990?q=80&w=2070",
+    "inclusions": [
+      "Print E-Ticket",
+      "My Bookings",
+      "24x7 Customer support: +91 9353273108",
+      "Agent Login",
+      "Cancellation Policies"
+    ],
+    "itinerary": [
+      {
+        "title": "Day 1 Mysore City Tour",
+        "desc": "Full-day Mysore Local Sightseeing Tour\n\tDuration: 9 to 11 hours\n\tTour by Private Cab (not shared with others)\n\tPickup & Drop: Mysore Hotel / Home\n\tPlaces Covered: Chamundeshwari Temple, Mysore Wax Museum, Mysore Maharaja Palace, St. Philomena Church, Mysore Zoological Park, Sri Ranganathaswamy Templ"
+      }
+    ]
+  },
+  {
+    "id": "MysoreOotyCoonoorSiteseeing",
+    "name": "Mysore Ooty Coonoor Siteseeing",
+    "duration": "3 Days",
+    "price": "₹935327",
+    "image": "https://images.unsplash.com/photo-1620067980661-823023447990?q=80&w=2070",
+    "inclusions": [
+      "Print E-Ticket",
+      "My Bookings",
+      "24x7 Customer support: +91 9353273108",
+      "Agent Login",
+      "Cancellation Policies"
+    ],
+    "itinerary": [
+      {
+        "title": "Day 1 Mysore",
+        "desc": "Departure at 8:00 a.m.\n\tVisit Chamundi Hill, Nandi, Mysore Palace, and Mysore Zoo.\n\tLater, visit St. Philomena’s Church and Jaganmohan Palace.\n\tAt dusk, visit Brindavan Gardens at Srirangapatna.\n\t\"Mysore Late-Night Stay."
+      },
+      {
+        "title": "Day 2 Ooty",
+        "desc": "Check out and depart for Ooty.\n\tBreakfast at Gundalpet around 8:30 a.m. [A half-hour].\n\tJourney through the forests of Bandipur and Madhumalai.\n\ttea break at Naduvattam around 11.30 am.\n\tUpon arrival in Ooty at 1:00 pm, visit Ooty Lake (boating).\n\tLunch is around 2:30 p.m. [45 minutes].\n\tLater, visi"
+      },
+      {
+        "title": "Day 3 Ooty",
+        "desc": "Pick up at 9:30 a.m.\n\tProceed to Coonoor. Visit the tea estate.\n\tVisit Doddabetta after returning to Ooty.\n\tdepart to Mysore."
+      }
+    ]
+  }
+]

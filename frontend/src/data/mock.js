@@ -1,21 +1,26 @@
 export const tourCategories = [
   {
-    id: "sightseeing",
-    category: "SIGHTSEEING PACKAGES",
+    id: 'sightseeing',
+    category: 'SIGHTSEEING PACKAGES',
     packages: [
       {
         id: 'MysoreOneDayCityTourPrivateVehicleFourPersonMaxbySedan',
-        name: 'Mysore One Day City Tour Private Vehicle (Four Person Max by Sedan)',
+        name: 'Mysore One Day City Tour Private Vehicle (Max 4 Persons by Sedan)',
         duration: '1 Day Tour',
         price: '₹625',
-        image: 'https://images.unsplash.com/photo-1600100397608-f010f41ab3a4?q=80&w=2070',
+        image: 'https://www.mycititours.com/admin/assets/img/holiday/main/Mysore_Palace_Image1.jpg',
         inclusions: [
-          'Entrance fee for the monuments visits are not included.',
-          'Guide services are not included.',
-          'Any personal expenses (drinks, tips, etc) are excluded.'
+          'Full-day Mysore Local Sightseeing Tour',
+          'Tour by Private Cab (not shared)',
+          'Pickup & Drop: Mysore Hotel / Home',
+          'Duration: 9 to 11 hours',
+          'Professional Driver'
         ],
         itinerary: [
-          { title: 'One Day Mysore City Tour', desc: 'Visit the beautiful Mysore Palace, Chamundi Hills, St. Philomenas Church, and the Mysore Zoo. Enjoy a comfortable private journey with your family.' }
+          {
+            title: 'Mysore City Highlights',
+            desc: 'Visit Chamundeshwari Temple, Mysore Wax Museum, Mysore Maharaja Palace, St. Philomena Church, Mysore Zoological Park, and Sri Ranganathaswamy Temple.'
+          }
         ]
       },
       {
@@ -25,47 +30,73 @@ export const tourCategories = [
         price: '₹400',
         image: 'https://images.unsplash.com/photo-1572508588884-6058e5e39669?q=80&w=2070',
         inclusions: [
-          'Entrance fee for the monuments visits are not included.',
-          'Guide services are not included.',
-          'Any personal expenses are excluded.'
+          'Economical Group Sightseeing',
+          'Shared AC Bus/Van',
+          'Fixed Itinerary',
+          'Covers all major Mysore landmarks',
+          'Experienced Guide/Driver'
         ],
         itinerary: [
-          { title: 'Group Sightseeing in Mysore', desc: 'Join our economical group tour covering all major attractions in Mysore including the Palace, Zoo, and Brindavan Gardens.' }
+          {
+            title: 'Group City Tour',
+            desc: 'Join our economical group tour covering all major attractions in Mysore including the Palace, Zoo, and Brindavan Gardens. Perfect for solo travelers and small groups.'
+          }
         ]
       },
       {
         id: 'MysoreCoorgTourPackagePrivateCabSedan',
         name: 'Mysore Coorg Tour Package (Private Cab Sedan)',
-        duration: 'Multi-Day',
+        duration: '3 Days',
         price: '₹10,000',
         image: 'https://images.unsplash.com/photo-1596522354195-2eb4d5bd1fc7?q=80&w=2070',
         inclusions: [
-          'Private Sedan vehicle for the entire itinerary.',
-          'Toll and parking charges.',
-          'Driver allowance.',
-          'Accommodation is excluded, please verify with support.'
+          'Private Sedan for 3 Days',
+          'Inter-city Transfers',
+          'Sightseeing in Mysore & Coorg',
+          'Toll & Parking Charges',
+          'Driver Allowance'
         ],
         itinerary: [
-          { title: 'Day 1: Mysore Arrival', desc: 'Arrive in Mysore. Transfer to hotel. Afternoon visit to Mysore Palace and Brindavan Gardens.' },
-          { title: 'Day 2: Coorg Transfer', desc: 'Morning drive to Coorg. Enroute visit Dubare Elephant Camp. Check-in to Coorg hotel.' },
-          { title: 'Day 3: Coorg Sightseeing', desc: 'Visit Abbey Falls, Raja Seat, and Omkareshwara Temple.' }
+          {
+            title: 'Day 1: Mysore Sightseeing',
+            desc: 'Pick up at Mysore. Visit Chamundi Hills, St. Philomena’s Church, Mysore Palace, Zoo, Tippu’s Palace, and Brindavan Gardens.'
+          },
+          {
+            title: 'Day 2: Coorg Transfer & Local',
+            desc: 'Proceed to Coorg. Visit Cauvery Nisarghadhama, Golden Temple (Bylakuppe), Raja’s Seat, Omkareswara Temple, and Abbey Falls.'
+          },
+          {
+            title: 'Day 3: Talacauvery & Return',
+            desc: 'Visit Bhagamandala and Talacauvery. Return to Mysore in the afternoon. Evening drop at Bus Station/Railway Station.'
+          }
         ]
       },
       {
         id: 'MysoreOotyCoonoorSiteseeing',
-        name: 'Mysore, Ooty & Coonoor Sightseeing',
-        duration: 'Multi-Day',
+        name: 'Mysore Ooty Coonoor Sightseeing',
+        duration: '3 Days',
         price: '₹12,000',
         image: 'https://images.unsplash.com/photo-1589136777351-fdc9c6f2a281?q=80&w=2070',
         inclusions: [
-          'Private Cab for the entire trip.',
-          'Toll and parking charges included.',
-          'Sightseeing to all major spots in Ooty and Coonoor.'
+          'Private Cab for 3 Days',
+          'Visit to Bandipur Forest',
+          'Ooty & Coonoor Sightseeing',
+          'All State Permits & Tolls',
+          'Dedicated Driver'
         ],
         itinerary: [
-          { title: 'Day 1: Mysore to Ooty', desc: 'Drive from Mysore to Ooty. Enroute visit Bandipur National Park (Safari optional). Check-in to Ooty hotel.' },
-          { title: 'Day 2: Ooty Local Sightseeing', desc: 'Visit Botanical Garden, Ooty Lake, and Doddabetta Peak.' },
-          { title: 'Day 3: Coonoor Excursion', desc: 'Day trip to Coonoor. Visit Sim Park, Dolphin Nose, and Lambs Rock. Return to base.' }
+          {
+            title: 'Day 1: Mysore Local & Heritage',
+            desc: 'Visit Chamundi Hill, Nandi, Mysore Palace, Zoo, St. Philomena’s Church, and Brindavan Gardens.'
+          },
+          {
+            title: 'Day 2: Ooty Forest Drive & Lake',
+            desc: 'Drive through Bandipur and Madhumalai forests. Visit Ooty Lake for boating and local botanical gardens.'
+          },
+          {
+            title: 'Day 3: Coonoor Tea Estates',
+            desc: 'Proceed to Coonoor. Visit tea estates and viewpoints like Doddabetta. Return journey to Mysore.'
+          }
         ]
       }
     ]
