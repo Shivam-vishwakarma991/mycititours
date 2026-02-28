@@ -1,0 +1,24 @@
+<li class="list-inline-item"><a href="https://booking.mycititours.com/user/login">Print E-Ticket</a></li>
+<li class="list-inline-item"><a href="https://booking.mycititours.com/user/login">My Bookings </a></li>
+<li class="list-inline-item"><a href="https://www.mycititours.com/blog-list">Blog</a></li>
+<h3 class="fz18 black-color fwb">Tour Overview</h3>
+<li>Full-day Mysore Local Sightseeing Tour</li>
+<li>Duration: 9 to 11 hours</li>
+<li>Tour by Private Cab (not shared with others)</li>
+<li>Pickup &amp; Drop: Mysore Hotel / Home</li>
+<li>Places Covered: Chamundeshwari Temple, Mysore Wax Museum, Mysore Maharaja Palace, St. Philomena Church, Mysore Zoological Park, Sri Ranganathaswamy Temple, Tombs of Tipu Sultan and Hyder Ali (Gumbaz), KRS Dam and Brindavan Garden</li>
+<li>Full-day Mysore Local Sightseeing Tour</li>
+<li>Duration: 9 to 11 hours</li>
+<li>Tour by Private Cab (not shared with others)</li>
+<li>Pickup &amp; Drop: Mysore Hotel / Home</li>
+<li>Places Covered: Chamundeshwari Temple, Mysore Wax Museum, Mysore Maharaja Palace, St. Philomena Church, Mysore Zoological Park, Sri Ranganathaswamy Temple, Tombs of Tipu Sultan and Hyder Ali (Gumbaz), KRS Dam and Brindavan Garden</li>
+<li class="pb-2"> 30 days or more before date of departure 25% of total cost.</li>
+<li class="pb-2">29-20 day before data of departure 50% of total cost. </li>
+<li class="pb-2">19 days or less before date of departure 100% of total cost.</li>
+<h2 class="main-color fwb fz24"> <span class="fa fa-inr"> </span> <span id="totalpriceofall">625</span></h2>
+<h3 class="black-color fwb fz18">Related Tours</h3>
+<div class="success_msg"></div>
+<div id="error_msg_reg" class="error_msg"></div>
+<li class=""><i class="icofont-google-map"></i> 09, Ullas 1st Floor ,Temple Road Jayalakshmipuram LandMark- Above  Hotel MTR<br>MYSORE<br>Karnataka <br>India 570012</li>
+<li class=""><i class="icofont-phone"></i> <a href="tel:+91 9353273108 ">+91 9353273108 </a></li>
+<li><i class="icofont-envelope-open"></i> <a href="mailto:Sales@mycititours.com">Sales@mycititours.com</a></li>

@@ -1,109 +1,108 @@
-export const destinations = [
+export const tourCategories = [
   {
-    id: 1,
-    name: "Kerala Backwaters",
-    description: "Experience the tranquil backwaters in a traditional houseboat.",
-    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944",
-    duration: "3-5 Days",
-    highlights: ["Houseboat Stay", "Ayurvedic Spa", "Local Cuisine"]
+    id: "sightseeing",
+    category: "SIGHTSEEING PACKAGES",
+    packages: [
+      {
+        id: 'MysoreOneDayCityTourPrivateVehicleFourPersonMaxbySedan',
+        name: 'Mysore One Day City Tour Private Vehicle (Four Person Max by Sedan)',
+        duration: '1 Day Tour',
+        price: '₹625',
+        image: 'https://images.unsplash.com/photo-1600100397608-f010f41ab3a4?q=80&w=2070',
+        inclusions: [
+          'Entrance fee for the monuments visits are not included.',
+          'Guide services are not included.',
+          'Any personal expenses (drinks, tips, etc) are excluded.'
+        ],
+        itinerary: [
+          { title: 'One Day Mysore City Tour', desc: 'Visit the beautiful Mysore Palace, Chamundi Hills, St. Philomenas Church, and the Mysore Zoo. Enjoy a comfortable private journey with your family.' }
+        ]
+      },
+      {
+        id: 'MysoreOneDayCityTourGroupTour',
+        name: 'Mysore One Day City Tour Group Tour',
+        duration: '1 Day Tour',
+        price: '₹400',
+        image: 'https://images.unsplash.com/photo-1572508588884-6058e5e39669?q=80&w=2070',
+        inclusions: [
+          'Entrance fee for the monuments visits are not included.',
+          'Guide services are not included.',
+          'Any personal expenses are excluded.'
+        ],
+        itinerary: [
+          { title: 'Group Sightseeing in Mysore', desc: 'Join our economical group tour covering all major attractions in Mysore including the Palace, Zoo, and Brindavan Gardens.' }
+        ]
+      },
+      {
+        id: 'MysoreCoorgTourPackagePrivateCabSedan',
+        name: 'Mysore Coorg Tour Package (Private Cab Sedan)',
+        duration: 'Multi-Day',
+        price: '₹10,000',
+        image: 'https://images.unsplash.com/photo-1596522354195-2eb4d5bd1fc7?q=80&w=2070',
+        inclusions: [
+          'Private Sedan vehicle for the entire itinerary.',
+          'Toll and parking charges.',
+          'Driver allowance.',
+          'Accommodation is excluded, please verify with support.'
+        ],
+        itinerary: [
+          { title: 'Day 1: Mysore Arrival', desc: 'Arrive in Mysore. Transfer to hotel. Afternoon visit to Mysore Palace and Brindavan Gardens.' },
+          { title: 'Day 2: Coorg Transfer', desc: 'Morning drive to Coorg. Enroute visit Dubare Elephant Camp. Check-in to Coorg hotel.' },
+          { title: 'Day 3: Coorg Sightseeing', desc: 'Visit Abbey Falls, Raja Seat, and Omkareshwara Temple.' }
+        ]
+      },
+      {
+        id: 'MysoreOotyCoonoorSiteseeing',
+        name: 'Mysore, Ooty & Coonoor Sightseeing',
+        duration: 'Multi-Day',
+        price: '₹12,000',
+        image: 'https://images.unsplash.com/photo-1589136777351-fdc9c6f2a281?q=80&w=2070',
+        inclusions: [
+          'Private Cab for the entire trip.',
+          'Toll and parking charges included.',
+          'Sightseeing to all major spots in Ooty and Coonoor.'
+        ],
+        itinerary: [
+          { title: 'Day 1: Mysore to Ooty', desc: 'Drive from Mysore to Ooty. Enroute visit Bandipur National Park (Safari optional). Check-in to Ooty hotel.' },
+          { title: 'Day 2: Ooty Local Sightseeing', desc: 'Visit Botanical Garden, Ooty Lake, and Doddabetta Peak.' },
+          { title: 'Day 3: Coonoor Excursion', desc: 'Day trip to Coonoor. Visit Sim Park, Dolphin Nose, and Lambs Rock. Return to base.' }
+        ]
+      }
+    ]
   },
   {
-    id: 2,
-    name: "Coorg - Scotland of India",
-    description: "Explore lush coffee estates and majestic waterfalls.",
-    image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d", // Changed image to avoid repeating
-    duration: "2-4 Days",
-    highlights: ["Coffee Tours", "Abbey Falls", "Raja's Seat"]
+    id: "domestic",
+    category: "DOMESTIC PACKAGES",
+    packages: [
+      { id: "d1", name: "Mysore Coorg Tour Package", duration: "Private Cab Sedan", 
+        image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d",
+      },
+      { id: "d2", name: "Mysore One Day City Tour", duration: "Private Vehicle by Sedan", 
+        image: "https://images.unsplash.com/photo-1588661704285-d7fb9d6f35ad",
+      },
+      { id: "d3", name: "Mysore Ooty Coonoor Siteseeing", duration: "Multi-Day Package", 
+        image: "https://images.unsplash.com/photo-1544256221-dbb153b81eb7",
+      }
+    ]
   },
   {
-    id: 3,
-    name: "Ooty & Coonoor",
-    description: "Discover the heritage toy train and sprawling tea gardens.",
-    image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d", // Ooty specific
-    duration: "3-4 Days",
-    highlights: ["Toy Train", "Tea Gardens", "Doddabetta Peak"]
-  },
-  {
-    id: 4,
-    name: "Mysore & Wayanad",
-    description: "A perfect blend of royal history and wildlife adventure.",
-    image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d", // Mysore palace
-    duration: "4-5 Days",
-    highlights: ["Mysore Palace", "Wildlife Safari", "Spice Gardens"]
-  },
-  {
-    id: 5,
-    name: "Pondicherry",
-    description: "Relax in the serene beaches and colonial French Quarters.",
-    image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d", // Pondicherry
-    duration: "2-3 Days",
-    highlights: ["French Quarter", "Auroville", "Beach Walks"]
-  },
-  {
-    id: 6,
-    name: "Kodaikanal",
-    description: "Misty mountains, serene lakes and beautiful pine forests.",
-    image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d", // Kodaikanal
-    duration: "2-3 Days",
-    highlights: ["Kodai Lake", "Pillar Rocks", "Pine Forests"]
+    id: "international",
+    category: "INTERNATIONAL PACKAGES",
+    packages: [
+      { id: "i1", name: "Explore International Destinations", duration: "Coming Soon", 
+        image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+      }
+    ]
   }
 ];
 
-export const packagesData = [
-  {
-    id: 1,
-    name: "Kerala Complete",
-    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944",
-    duration: "6 Days / 5 Nights",
-    price: "₹28,999",
-    pricePerPerson: "per person",
-    destinations: ["Munnar", "Thekkady", "Alleppey", "Kochi"],
-    inclusions: [
-      "Private AC Cab",
-      "5 Nights Hotel Stay",
-      "Daily Breakfast & Dinner",
-      "Houseboat Experience",
-      "All Sightseeing",
-      "Toll & Parking"
-    ],
-    popular: true
-  },
-  {
-    id: 2,
-    name: "Karnataka Heritage",
-    image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d",
-    duration: "5 Days / 4 Nights",
-    price: "₹24,999",
-    pricePerPerson: "per person",
-    destinations: ["Bangalore", "Mysore", "Coorg", "Hassan"],
-    inclusions: [
-      "Private AC Cab",
-      "4 Nights Hotel Stay",
-      "Daily Breakfast & Dinner",
-      "Palace Entry Tickets",
-      "Coffee Plantation Tour",
-      "All Transfers"
-    ],
-    popular: false
-  },
-  {
-    id: 3,
-    name: "Tamil Nadu Temple Trail",
-    image: "https://images.unsplash.com/photo-1544256221-dbb153b81eb7",
-    duration: "7 Days / 6 Nights",
-    price: "₹32,999",
-    pricePerPerson: "per person",
-    destinations: ["Chennai", "Mahabalipuram", "Pondicherry", "Thanjavur", "Madurai"],
-    inclusions: [
-      "Private AC Cab",
-      "6 Nights Hotel Stay",
-      "All Meals Included",
-      "Temple Guide Services",
-      "Beach Resort Stay",
-      "Cultural Programs"
-    ],
-    popular: false
-  }
+export const taxiRoutes = [
+  { id: "t1", from: "Bangalore Airport", to: "Mysore", vehicle: "Sedan / SUV / Innova", type: "One Way / Round Trip" },
+  { id: "t2", from: "Mysore", to: "Bangalore Airport", vehicle: "Sedan / SUV / Innova", type: "One Way / Round Trip" },
+  { id: "t3", from: "Mangalore", to: "Mysore / Coorg", vehicle: "Outstation Tour Package", type: "Multiple Days" },
+  { id: "t4", from: "Mysore", to: "Ooty / Wayanad", vehicle: "Outstation Tour Package", type: "Multiple Days" },
+  { id: "t5", from: "Bangalore City", to: "Mysore", vehicle: "Sedan / SUV / Innova", type: "One Way / Round Trip" },
+  { id: "t6", from: "Mysore City", to: "Local Sightseeing", vehicle: "Sedan / SUV / Mini Bus", type: "8Hr / 80Km" },
 ];
 
 export const reviews = [
@@ -112,8 +111,8 @@ export const reviews = [
     name: "Rajesh Kumar",
     location: "Bangalore",
     rating: 5,
-    text: "Absolutely phenomenal experience! The driver was professional, hotels were top-notch, and every detail was perfectly planned. Our Kerala trip became a lifetime memory.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a", // placeholder avatar
+    text: "Absolutely phenomenal experience! The driver was professional, cars were spotless, and the pricing was clear with no hidden charges.",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a",
     tripDate: "December 2024"
   },
   {
@@ -121,8 +120,8 @@ export const reviews = [
     name: "Priya Sharma",
     location: "Mumbai",
     rating: 5,
-    text: "Mycititours made our family vacation stress-free and magical. From pickup to drop-off, everything was seamless. Highly recommended!",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2", // placeholder avatar
+    text: "Mycititours made our group booking from Bangalore Airport to Coorg stress-free. From pickup to drop-off, everything was seamless. Highly recommended!",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2",
     tripDate: "November 2024"
   },
   {
@@ -130,8 +129,8 @@ export const reviews = [
     name: "Arjun & Sneha",
     location: "Delhi",
     rating: 5,
-    text: "Perfect honeymoon package! The romantic touches, beautiful locations, and comfortable journey made our trip unforgettable. Thank you Mycititours!",
-    image: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6", // placeholder avatar
+    text: "Perfect outstation package! The driver was knowledgeable about all the local routes which made our journey smooth. Thank you Mycititours!",
+    image: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6",
     tripDate: "October 2024"
   }
 ];

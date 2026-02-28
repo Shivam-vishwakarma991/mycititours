@@ -1,52 +1,41 @@
-import { useEffect } from 'react';
-import Lenis from '@studio-freight/lenis';
+import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
-import Destinations from './components/Destinations';
 import Packages from './components/Packages';
+import TaxiRoutes from './components/TaxiRoutes';
 import WhyChooseUs from './components/WhyChooseUs';
 import Reviews from './components/Reviews';
 import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
+import LeadPopup from './components/LeadPopup';
 
 function App() {
-  useEffect(() => {
-    // Implement Lenis for buttery-smooth Awwwards-level scrolling
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smooth: true,
-      wheelMultiplier: 1,
-      touchMultiplier: 2,
-    });
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [popupData, setPopupData] = useState({ title: '', context: '' });
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
+  const openPopup = (title = 'Enquire Now', context = '') => {
+    setPopupData({ title, context });
+    setIsPopupOpen(true);
+  };
 
   return (
-    <>
-      <CustomCursor />
-      <Navbar />
+    <div className="bg-gray-50 font-body text-gray-800">
+      <Navbar openPopup={openPopup} />
       <main>
-        <Hero />
-        <Services />
-        <Destinations />
-        <Packages />
+        <Hero openPopup={openPopup} />
+        <Services openPopup={openPopup} />
+        <TaxiRoutes openPopup={openPopup} />
+        <Packages openPopup={openPopup} />
         <WhyChooseUs />
         <Reviews />
       </main>
       <Footer />
-    </>
+      <LeadPopup
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+        data={popupData}
+      />
+    </div>
   );
 }
 

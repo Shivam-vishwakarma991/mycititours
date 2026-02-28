@@ -1,0 +1,68 @@
+[
+  {
+    "id": "MysoreOneDayCityTourPrivateVehicleFourPersonMaxbySedan",
+    "name": "Mysore One Day City Tour Private Vehicle  Four  Person Max  by Sedan",
+    "price": "₹625",
+    "image": "https://www.mycititours.com/admin/assets/img/holiday/main/Mysore_Palace_Image1.jpg",
+    "duration": "1 Days",
+    "inclusions": [
+      "Entrance fee for the monuments visits are not included in the price and guide services are also not included.",
+      "Any personal expenses that may include porterage, drinks, telephone, laundry etc."
+    ],
+    "itinerary": [
+      {
+        "title": "One Day Mysore City Tour",
+        "desc": "Enjoy the serene views and comfortable journey to your next destination."
+      }
+    ]
+  },
+  {
+    "id": "MysoreCoorgTourPackagePrivateCabSedan",
+    "name": "MysoreCoorgTourPackagePrivateCabSedan",
+    "price": "₹10000",
+    "image": "",
+    "duration": "1 Days",
+    "inclusions": [
+      "Any personal expenses that may include porterage, drinks, telephone, laundry etc."
+    ],
+    "itinerary": [
+      {
+        "title": "Mysore",
+        "desc": "Enjoy the serene views and comfortable journey to your next destination."
+      }
+    ]
+  },
+  {
+    "id": "MysoreOneDayCityTourGroupTour",
+    "name": "Mysore One Day City Tour Group Tour",
+    "price": "₹400",
+    "image": "",
+    "duration": "1 Days",
+    "inclusions": [
+      "Entrance fee for the monuments visits are not included in the price and guide services are also not included.",
+      "Any personal expenses that may include porterage, drinks, telephone, laundry etc."
+    ],
+    "itinerary": [
+      {
+        "title": "Mysore City Tour",
+        "desc": "Enjoy the serene views and comfortable journey to your next destination."
+      }
+    ]
+  },
+  {
+    "id": "MysoreOotyCoonoorSiteseeing",
+    "name": "Mysore Ooty Coonoor Siteseeing",
+    "price": "₹12000",
+    "image": "",
+    "duration": "1 Days",
+    "inclusions": [
+      "Any personal expenses that may include porterage, drinks, telephone, laundry etc."
+    ],
+    "itinerary": [
+      {
+        "title": "Mysore",
+        "desc": "Enjoy the serene views and comfortable journey to your next destination."
+      }
+    ]
+  }
+]

@@ -1,82 +1,83 @@
-import { motion } from 'framer-motion';
-import { MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Facebook, Twitter } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer className="bg-[#1a1a1c] text-sand py-12 md:py-20 relative overflow-hidden">
-            <div className="absolute top-0 right-1/4 w-[30vw] h-[30vw] bg-forest/20 rounded-full blur-[100px] pointer-events-none"></div>
+        <footer className="bg-gray-900 text-white py-12 md:py-20 relative overflow-hidden">
+            <div className="absolute top-0 right-1/4 w-[30vw] h-[30vw] bg-primary/20 rounded-full blur-[100px] pointer-events-none"></div>
 
             <div className="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-10 md:mb-16">
                 <div>
                     <a href="#" className="flex items-center gap-2 mb-6 cursor-pointer">
-                        <div className="bg-terracotta p-2 rounded-full text-sand">
+                        <div className="bg-accent p-2 rounded-full text-white">
                             <MapPin size={24} />
                         </div>
-                        <span className="font-heading text-2xl font-bold tracking-tight text-sand">
-                            Mycititours
-                        </span>
+                        <span className="font-heading text-2xl font-bold tracking-wider">mycititours.</span>
                     </a>
-                    <p className="font-body text-sand/60 mb-6 leading-relaxed">
-                        Creating unforgettable South India travel experiences for over 15 years. Safe, comfortable, and magical.
+                    <p className="text-gray-400 font-body leading-relaxed mb-6">
+                        Crafting unforgettable South Indian journeys with comfort, premium cab services, and expert guidance.
                     </p>
-                    <div className="flex items-center gap-4">
-                        {[Facebook, Instagram, Twitter, Youtube].map((Icon, index) => (
-                            <a key={index} href="#" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-terracotta transition-colors duration-300">
-                                <Icon size={18} />
-                            </a>
-                        ))}
+                    <div className="flex gap-4">
+                        <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
+                            <Facebook size={18} />
+                        </a>
+                        <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
+                            <Instagram size={18} />
+                        </a>
+                        <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
+                            <Twitter size={18} />
+                        </a>
                     </div>
                 </div>
 
                 <div>
-                    <h4 className="font-heading font-bold text-lg mb-6 text-softgold">Quick Links</h4>
-                    <ul className="space-y-4">
-                        {['Home', 'Destinations', 'Packages', 'Why Us', 'Reviews'].map(link => (
-                            <li key={link}>
-                                <a href={`#${link.toLowerCase().replace(' ', '-')}`} className="font-body text-sand/60 hover:text-terracotta transition-colors">
-                                    {link}
-                                </a>
-                            </li>
-                        ))}
+                    <h4 className="font-heading text-xl font-bold mb-6 text-accent">Quick Links</h4>
+                    <ul className="space-y-4 font-body">
+                        <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Our Services</a></li>
+                        <li><a href="#taxi" className="text-gray-400 hover:text-white transition-colors">Taxi Routes</a></li>
+                        <li><a href="#packages" className="text-gray-400 hover:text-white transition-colors">Tour Packages</a></li>
+                        <li><a href="#why-us" className="text-gray-400 hover:text-white transition-colors">Why Choose Us</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 className="font-heading font-bold text-lg mb-6 text-softgold">Popular Locations</h4>
-                    <ul className="space-y-4 text-sand/60 font-body">
-                        <li>Kerala</li>
-                        <li>Coorg</li>
-                        <li>Ooty & Coonoor</li>
-                        <li>Mysore</li>
-                        <li>Pondicherry</li>
+                    <h4 className="font-heading text-xl font-bold mb-6 text-accent">Contact Info</h4>
+                    <ul className="space-y-4 font-body">
+                        <li className="flex items-start gap-3">
+                            <MapPin className="text-primary mt-1 shrink-0" size={18} />
+                            <span className="text-gray-400">#45, Travel Hub Building, MG Road, Bangalore 560001</span>
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <Phone className="text-primary shrink-0" size={18} />
+                            <a href="tel:+918269794013" className="text-gray-400 hover:text-white transition-colors">+91 82697 94013</a>
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <Mail className="text-primary shrink-0" size={18} />
+                            <a href="mailto:info@mycititours.com" className="text-gray-400 hover:text-white transition-colors">info@mycititours.com</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 className="font-heading font-bold text-lg mb-6 text-softgold">Contact Us</h4>
-                    <ul className="space-y-4 text-sand/60 font-body mb-8">
-                        <li>
-                            <a href="tel:+918269794013" className="hover:text-terracotta hover:underline">+91 8269794013</a>
-                            <span className="block text-xs uppercase opacity-70 mt-1">Mon-Sun, 9AM-9PM</span>
-                        </li>
-                        <li>
-                            <a href="mailto:info@Mycititours.com" className="hover:text-terracotta hover:underline">info@Mycititours.com</a>
-                            <span className="block text-xs uppercase opacity-70 mt-1">Reply within 24hrs</span>
-                        </li>
-                        <li>
-                            Bangalore, Karnataka
-                            <span className="block text-xs uppercase opacity-70 mt-1">Serving all South India</span>
-                        </li>
-                    </ul>
+                    <h4 className="font-heading text-xl font-bold mb-6 text-accent">Newsletter</h4>
+                    <p className="text-gray-400 font-body mb-4">Subscribe for exclusive travel deals.</p>
+                    <form className="flex flex-col gap-3">
+                        <input
+                            type="email"
+                            placeholder="Your email address"
+                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 font-body focus:outline-none focus:border-primary transition-colors text-white"
+                        />
+                        <button type="submit" className="bg-primary hover:bg-primary-light text-white font-bold py-3 rounded-lg transition-colors font-body shadow-lg">
+                            Subscribe Needs
+                        </button>
+                    </form>
                 </div>
             </div>
 
-            <div className="container mx-auto px-6 md:px-12 border-t border-sand/10 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-sand/40 font-body">
-                <p>© 2024 Mycititours. All rights reserved.</p>
-                <div className="flex items-center gap-6 mt-4 md:mt-0">
-                    <a href="#" className="hover:text-sand/80">Privacy Policy</a>
-                    <a href="#" className="hover:text-sand/80">Terms of Service</a>
-                    <a href="#" className="hover:text-sand/80">Cancellation Policy</a>
+            <div className="container mx-auto px-6 md:px-12 relative z-10 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-body">
+                <p>&copy; {new Date().getFullYear()} Mycititours. All rights reserved.</p>
+                <div className="flex gap-6">
+                    <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
                 </div>
             </div>
         </footer>
