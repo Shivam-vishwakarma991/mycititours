@@ -1,14 +1,14 @@
 export const tourCategories = [
   {
     id: 'sightseeing',
-    category: 'SIGHTSEEING PACKAGES',
+    category: 'OUR PACKAGES',
     packages: [
       {
         id: 'MysoreOneDayCityTourPrivateVehicleFourPersonMaxbySedan',
         name: 'Mysore One Day City Tour Private Vehicle (Max 4 Persons by Sedan)',
         duration: '1 Day Tour',
         price: '₹625',
-        image: 'https://www.mycititours.com/admin/assets/img/holiday/main/Mysore_Palace_Image1.jpg',
+        image: 'https://www.mycititours.com/admin/assets/img/holiday/main/brands_live_1664985570038.jpg',
         inclusions: [
           'Full-day Mysore Local Sightseeing Tour',
           'Tour by Private Cab (not shared)',
@@ -28,7 +28,7 @@ export const tourCategories = [
         name: 'Mysore One Day City Tour Group Tour',
         duration: '1 Day Tour',
         price: '₹400',
-        image: 'https://images.unsplash.com/photo-1572508588884-6058e5e39669?q=80&w=2070',
+        image: 'https://www.mycititours.com/admin/assets/img/holiday/main/Mysore_-ooty-_Coonoor_Siteseeing.png',
         inclusions: [
           'Economical Group Sightseeing',
           'Shared AC Bus/Van',
@@ -48,7 +48,7 @@ export const tourCategories = [
         name: 'Mysore Coorg Tour Package (Private Cab Sedan)',
         duration: '3 Days',
         price: '₹10,000',
-        image: 'https://images.unsplash.com/photo-1596522354195-2eb4d5bd1fc7?q=80&w=2070',
+        image: 'https://www.mycititours.com/admin/assets/img/holiday/main/2.png',
         inclusions: [
           'Private Sedan for 3 Days',
           'Inter-city Transfers',
@@ -76,7 +76,7 @@ export const tourCategories = [
         name: 'Mysore Ooty Coonoor Sightseeing',
         duration: '3 Days',
         price: '₹12,000',
-        image: 'https://images.unsplash.com/photo-1589136777351-fdc9c6f2a281?q=80&w=2070',
+        image: 'https://www.mycititours.com/admin/assets/img/holiday/main/Mysore_-ooty-_Coonoor_Siteseeing.png',
         inclusions: [
           'Private Cab for 3 Days',
           'Visit to Bandipur Forest',
@@ -101,30 +101,30 @@ export const tourCategories = [
       }
     ]
   },
-  {
-    id: "domestic",
-    category: "DOMESTIC PACKAGES",
-    packages: [
-      { id: "d1", name: "Mysore Coorg Tour Package", duration: "Private Cab Sedan", 
-        image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d",
-      },
-      { id: "d2", name: "Mysore One Day City Tour", duration: "Private Vehicle by Sedan", 
-        image: "https://images.unsplash.com/photo-1588661704285-d7fb9d6f35ad",
-      },
-      { id: "d3", name: "Mysore Ooty Coonoor Siteseeing", duration: "Multi-Day Package", 
-        image: "https://images.unsplash.com/photo-1544256221-dbb153b81eb7",
-      }
-    ]
-  },
-  {
-    id: "international",
-    category: "INTERNATIONAL PACKAGES",
-    packages: [
-      { id: "i1", name: "Explore International Destinations", duration: "Coming Soon", 
-        image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
-      }
-    ]
-  }
+  // {
+  //   id: "domestic",
+  //   category: "DOMESTIC PACKAGES",
+  //   packages: [
+  //     { id: "d1", name: "Mysore Coorg Tour Package", duration: "Private Cab Sedan", 
+  //       image: "https://images.unsplash.com/photo-1598091383021-15ddea10925d",
+  //     },
+  //     { id: "d2", name: "Mysore One Day City Tour", duration: "Private Vehicle by Sedan", 
+  //       image: "https://images.unsplash.com/photo-1588661704285-d7fb9d6f35ad",
+  //     },
+  //     { id: "d3", name: "Mysore Ooty Coonoor Siteseeing", duration: "Multi-Day Package", 
+  //       image: "https://images.unsplash.com/photo-1544256221-dbb153b81eb7",
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: "international",
+  //   category: "INTERNATIONAL PACKAGES",
+  //   packages: [
+  //     { id: "i1", name: "Explore International Destinations", duration: "Coming Soon", 
+  //       image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+  //     }
+  //   ]
+  // }
 ];
 
 export const taxiRoutes = [

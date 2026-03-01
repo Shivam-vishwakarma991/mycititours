@@ -28,13 +28,12 @@ export default function Navbar({ openPopup }) {
         >
             <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
                 {/* Logo */}
-                <a href="#" className="flex items-center gap-2 group">
-                    <div className="bg-accent p-2 rounded-full text-white group-hover:bg-primary transition-colors duration-300">
-                        <MapPin size={24} />
-                    </div>
-                    <span className={`font-heading text-2xl font-bold tracking-tight ${scrolled ? 'text-primary' : 'text-white'}`}>
-                        Mycititours
-                    </span>
+                <a href="#" className="flex items-center gap-3 group">
+                    <img
+                        src="/logo.png"
+                        alt="Mycititours Logo"
+                        className={`transition-all duration-300 ${scrolled ? 'h-10 md:h-12' : 'h-12 md:h-16'} w-auto`}
+                    />
                 </a>
 
                 {/* Desktop Links */}

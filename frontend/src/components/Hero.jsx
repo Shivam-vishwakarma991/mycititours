@@ -7,7 +7,7 @@ export default function Hero({ openPopup }) {
             <div className="absolute inset-0 z-0">
                 <img
                     src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944"
-                    alt="Kerala Backwaters"
+                    alt="Mysore Palace - Best Sightseeing and Taxi Service Mycititours"
                     className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-transparent"></div>
@@ -22,7 +22,7 @@ export default function Hero({ openPopup }) {
 
                 <h1 className="text-5xl md:text-7xl font-heading font-bold leading-tight mb-6 max-w-3xl text-white">
                     Discover the Magic of <br />
-                    <span className="text-accent">
+                    <span className="text-accent underline decoration-white/20 underline-offset-8">
                         South India
                     </span>
                 </h1>
