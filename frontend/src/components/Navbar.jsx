@@ -30,7 +30,7 @@ export default function Navbar({ openPopup }) {
                 {/* Logo */}
                 <a href="#" className="flex items-center gap-3 group">
                     <img
-                        src="/logo.png"
+                        src="logo.png"
                         alt="Mycititours Logo"
                         className={`transition-all duration-300 ${scrolled ? 'h-10 md:h-12' : 'h-12 md:h-16'} w-auto`}
                     />
