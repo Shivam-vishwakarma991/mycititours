@@ -41,12 +41,12 @@ export default function Hero({ openPopup }) {
                     </button>
 
                     <a
-                        href="tel:+918269794013"
+                        href="tel:+919353273108"
                         className="flex flex-col items-start bg-white/10 border border-white/20 backdrop-blur-md px-8 py-3 rounded-full hover:bg-white/20 transition-colors"
                     >
                         <span className="text-xs uppercase tracking-widest text-white/80">For Immediate Booking</span>
                         <span className="font-heading text-xl font-semibold flex items-center gap-2">
-                            <Phone size={18} className="text-accent" /> +91 8269794013
+                            <Phone size={18} className="text-accent" /> +91 9353273108
                         </span>
                     </a>
                 </div>
@@ -54,10 +54,10 @@ export default function Hero({ openPopup }) {
 
             {/* Floating Action Icons */}
             <div className="fixed right-6 bottom-6 md:top-1/2 md:-translate-y-1/2 flex flex-col gap-4 z-50">
-                <a href="tel:+918269794013" className="w-14 h-14 bg-primary backdrop-blur text-white rounded-full flex items-center justify-center hover:bg-primary-light transition-colors shadow-lg border border-white/10">
+                <a href="tel:+919353273108" className="w-14 h-14 bg-primary backdrop-blur text-white rounded-full flex items-center justify-center hover:bg-primary-light transition-colors shadow-lg border border-white/10">
                     <Phone size={24} />
                 </a>
-                <a href={`https://wa.me/918269794013?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" className="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-colors shadow-lg">
+                <a href={`https://wa.me/919353273108?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" className="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-colors shadow-lg">
                     <MessageCircle size={24} />
                 </a>
             </div>

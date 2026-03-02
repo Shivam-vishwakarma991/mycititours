@@ -22,7 +22,7 @@ Travel Date: ${details.date}
 Number of Travelers: ${details.travelers}
 Destination: ${details.destination}`;
 
-        const url = `https://wa.me/918269794013?text=${encodeURIComponent(text)}`;
+        const url = `https://wa.me/919353273108?text=${encodeURIComponent(text)}`;
         window.open(url, '_blank');
         onClose();
     };

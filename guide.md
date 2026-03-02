@@ -162,7 +162,7 @@ yarn add framer-motion gsap @studio-freight/lenis
    - 15+ Years Trusted
 5. **Phone Number Card** (PROMINENT):
    - Label: \"For Immediate Booking\"
-   - Phone: +91 8269794013(large, bold)
+   - Phone: +91 9353273108(large, bold)
    - Subtext: \"Available 24x7\"
    - Click-to-call functionality (tel: protocol)
    - Glass-morphism background
@@ -368,7 +368,7 @@ Features (6, grid 3 columns):
 - White background
 - Title: \"Book Your Journey Now\"
 - Subtitle: \"Available 24x7 - Never feel stranded\"
-- Phone: +91 8269794013(large, emerald-600)
+- Phone: +91 9353273108(large, emerald-600)
 - Button: \"Chat on WhatsApp\"
 
 **Card Animations:**
@@ -438,8 +438,8 @@ Features (6, grid 3 columns):
 - Kerala, Coorg, Ooty, Mysore, Pondicherry, Kodaikanal
 
 **Column 4: Contact Us**
-- Phone: +91 8269794013(Mon-Sun, 9AM-9PM)
-- Email: info@Mycititours.com (Reply within 24hrs)
+- Phone: +91 9353273108(Mon-Sun, 9AM-9PM)
+- Email: Sales@mycititours.com (Reply within 24hrs)
 - Location: Bangalore, Karnataka (Serving all South India)
 
 **Bottom Bar:**
@@ -472,7 +472,7 @@ Features (6, grid 3 columns):
 - Hover: scale(1.1)
 
 **Link:**
-https://wa.me/918269794013?text=Hi! I want to plan a South India trip
+https://wa.me/919353273108?text=Hi! I want to plan a South India trip
 
 **Animations:**
 - Entry: scale(0) → scale(1)
@@ -908,9 +908,9 @@ transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} // Custom easing for pre
 ## PLACEHOLDER DATA TO REPLACE
 
 Before going live, replace:
-1. Phone Number: +91 8269794013→ Actual business number
-2. Email: info@Mycititours.com → Actual business email
-3. WhatsApp Number: 918269794013 → Actual WhatsApp number
+1. Phone Number: +91 9353273108→ Actual business number
+2. Email: Sales@mycititours.com → Actual business email
+3. WhatsApp Number: 919353273108 → Actual WhatsApp number
 4. Social Media Links: # → Actual profile URLs
 5. Business Address: Generic Karnataka → Specific address
 

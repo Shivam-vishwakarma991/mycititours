@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="bg-gray-900 text-white py-12 md:py-20 relative overflow-hidden">
             <div className="absolute top-0 right-1/4 w-[30vw] h-[30vw] bg-primary/20 rounded-full blur-[100px] pointer-events-none"></div>
 
-            <div className="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-10 md:mb-16">
+            <div className="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-10 md:mb-16">
                 <div>
                     <a href="#" className="flex items-center gap-2 mb-6 cursor-pointer">
                         <div className="bg-accent p-2 rounded-full text-white">
@@ -44,20 +44,23 @@ export default function Footer() {
                     <ul className="space-y-4 font-body">
                         <li className="flex items-start gap-3">
                             <MapPin className="text-primary mt-1 shrink-0" size={18} />
-                            <span className="text-gray-400">#45, Travel Hub Building, MG Road, Bangalore 560001</span>
+                            <span className="text-gray-400">09, Ullas 1st Floor ,Temple Road Jayalakshmipuram LandMark- Above Hotel MTR <br/>
+MYSORE<br/>
+Karnataka<br/>
+India 570012</span>
                         </li>
                         <li className="flex items-center gap-3">
                             <Phone className="text-primary shrink-0" size={18} />
-                            <a href="tel:+918269794013" className="text-gray-400 hover:text-white transition-colors">+91 82697 94013</a>
+                            <a href="tel:+919353273108" className="text-gray-400 hover:text-white transition-colors">+91 82697 94013</a>
                         </li>
                         <li className="flex items-center gap-3">
                             <Mail className="text-primary shrink-0" size={18} />
-                            <a href="mailto:info@mycititours.com" className="text-gray-400 hover:text-white transition-colors">info@mycititours.com</a>
+                            <a href="mailto:Sales@mycititours.com" className="text-gray-400 hover:text-white transition-colors">Sales@mycititours.com</a>
                         </li>
                     </ul>
                 </div>
 
-                <div>
+                {/* <div>
                     <h4 className="font-heading text-xl font-bold mb-6 text-accent">Newsletter</h4>
                     <p className="text-gray-400 font-body mb-4">Subscribe for exclusive travel deals.</p>
                     <form className="flex flex-col gap-3">
@@ -70,7 +73,7 @@ export default function Footer() {
                             Subscribe Needs
                         </button>
                     </form>
-                </div>
+                </div> */}
             </div>
 
             <div className="container mx-auto px-6 md:px-12 relative z-10 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-body">

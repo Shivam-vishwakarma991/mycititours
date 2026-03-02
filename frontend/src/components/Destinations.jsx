@@ -111,7 +111,7 @@ export default function Destinations() {
             </div>
 
             <div className="text-center mt-12 md:mt-24">
-                <a href={`https://wa.me/918269794013?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" className="inline-block bg-transparent border-2 border-forest text-forest px-8 md:px-10 py-3 md:py-4 rounded-full font-body font-semibold uppercase tracking-wider hover:bg-forest hover:text-sand transition-colors duration-300">
+                <a href={`https://wa.me/919353273108?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" className="inline-block bg-transparent border-2 border-forest text-forest px-8 md:px-10 py-3 md:py-4 rounded-full font-body font-semibold uppercase tracking-wider hover:bg-forest hover:text-sand transition-colors duration-300">
                     Customize Your Itinerary
                 </a>
             </div>

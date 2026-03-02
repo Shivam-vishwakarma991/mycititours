@@ -33,7 +33,7 @@ export default function TaxiRoutes() {
             }
         });
 
-        const waUrl = `https://wa.me/918269794013?text=${encodeURIComponent(message)}`;
+        const waUrl = `https://wa.me/919353273108?text=${encodeURIComponent(message)}`;
         window.open(waUrl, '_blank');
     };
 
