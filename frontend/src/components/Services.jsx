@@ -1,4 +1,4 @@
-import { MapPin, Building, Plane, ArrowRight } from 'lucide-react';
+import { MapPin, Building, Plane, Briefcase, ArrowRight } from 'lucide-react';
 
 const services = [
     {
@@ -15,6 +15,11 @@ const services = [
         icon: Plane,
         title: 'Airport Transfers',
         description: 'Reliable pickup and drop services to/from airports.',
+    },
+    {
+        icon: Briefcase,
+        title: 'Destination Management',
+        description: 'Complete local logistics support including meet & greet, accommodation, transfers, and event management.',
     }
 ];
 
@@ -31,7 +36,7 @@ export default function Services({ openPopup }) {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-10 md:mb-16">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-10 md:mb-16">
                     {services.map((service, index) => (
                         <div
                             key={service.title}

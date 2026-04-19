@@ -21,9 +21,9 @@ export default function Hero({ openPopup }) {
                 </div>
 
                 <h1 className="text-5xl md:text-7xl font-heading font-bold leading-tight mb-6 max-w-3xl text-white">
-                    Discover the Magic of <br />
+                    Destination management company <br />
                     <span className="text-accent underline decoration-white/20 underline-offset-8">
-                        South India
+                        for South India
                     </span>
                 </h1>
 
