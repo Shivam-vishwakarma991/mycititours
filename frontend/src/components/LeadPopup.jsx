@@ -7,9 +7,10 @@ export default function LeadPopup({ isOpen, onClose, data }) {
         const formData = new FormData(e.target);
         const details = {
             name: formData.get('name'),
+            city: formData.get('city'),
             phone: formData.get('phone'),
-            date: formData.get('date'),
-            travelers: formData.get('travelers'),
+            email: formData.get('email'),
+            message: formData.get('message'),
             destination: data.context || 'General Enquiry'
         };
 
@@ -17,10 +18,11 @@ export default function LeadPopup({ isOpen, onClose, data }) {
 Please find my details below to assist :
 
 Name: ${details.name}
+City: ${details.city}
 Phone: ${details.phone}
-Travel Date: ${details.date}
-Number of Travelers: ${details.travelers}
-Destination: ${details.destination}`;
+Email: ${details.email}
+Message: ${details.message}
+Enquiring for: ${details.destination}`;
 
         const url = `https://wa.me/919353273108?text=${encodeURIComponent(text)}`;
         window.open(url, '_blank');
@@ -37,43 +39,41 @@ Destination: ${details.destination}`;
                         exit={{ opacity: 0, y: 20, scale: 0.95 }}
                         className="bg-white rounded-2xl w-full max-w-md shadow-2xl overflow-hidden"
                     >
-                        <div className="bg-primary p-6 relative text-white text-center">
+                        <div className="bg-[#f8f8f8] p-6 relative text-gray-600 text-left pt-10">
                             <button
                                 onClick={onClose}
-                                className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors"
+                                className="absolute top-4 right-4 text-gray-400 hover:text-gray-800 transition-colors"
                             >
                                 <X size={24} />
                             </button>
-                            <h2 className="text-2xl font-bold mb-1">{data.title || "Get a Free Quote"}</h2>
-                            <p className="text-white/80 text-sm">Fill details below and we will contact you on WhatsApp instantly.</p>
+                            <h2 className="text-xl font-bold mb-2 text-gray-500 uppercase tracking-wide leading-tight">PLEASE FILL THE FORM & WE WILL GET BACK TO YOU SOON!</h2>
                         </div>
-                        <form onSubmit={handleSubmit} className="p-6 space-y-4 text-gray-800">
+                        <form onSubmit={handleSubmit} className="p-6 pt-0 space-y-4 text-gray-800 bg-[#f8f8f8]">
                             {data.context && (
-                                <div className="bg-orange-50 text-accent-dark text-sm p-3 rounded-lg border border-orange-100 font-medium">
+                                <div className="bg-white text-gray-600 text-sm p-3 border border-gray-200 font-medium mb-4">
                                     Enquiring for: {data.context}
                                 </div>
                             )}
                             <div>
-                                <label className="block text-sm font-semibold mb-1 text-gray-700">Your Name *</label>
-                                <input required name="name" type="text" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" placeholder="Enter Full Name" />
+                                <input required name="name" type="text" className="w-full bg-transparent border border-gray-300 px-4 py-3 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all placeholder-gray-500" placeholder="Your Name*" />
                             </div>
                             <div>
-                                <label className="block text-sm font-semibold mb-1 text-gray-700">Phone / WhatsApp Number *</label>
-                                <input required name="phone" type="tel" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" placeholder="+91 XXXXX XXXXX" />
+                                <input required name="city" type="text" className="w-full bg-transparent border border-gray-300 px-4 py-3 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all placeholder-gray-500" placeholder="Your City*" />
                             </div>
-                            <div className="grid grid-cols-2 gap-4">
-                                <div>
-                                    <label className="block text-sm font-semibold mb-1 text-gray-700">Travel Date</label>
-                                    <input required name="date" type="date" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-semibold mb-1 text-gray-700">Travelers</label>
-                                    <input required name="travelers" type="number" min="1" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" placeholder="E.g. 2" />
-                                </div>
+                            <div>
+                                <input required name="phone" type="tel" className="w-full bg-transparent border border-gray-300 px-4 py-3 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all placeholder-gray-500" placeholder="Your Phone*" />
                             </div>
-                            <button type="submit" className="w-full bg-accent hover:bg-accent-dark text-white font-bold py-4 rounded-lg mt-4 transition-colors shadow-lg shadow-accent/30 text-lg">
-                                Send Enquiry on WhatsApp
-                            </button>
+                            <div>
+                                <input required name="email" type="email" className="w-full bg-transparent border border-gray-300 px-4 py-3 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all placeholder-gray-500" placeholder="Your Email*" />
+                            </div>
+                            <div>
+                                <textarea required name="message" rows="4" className="w-full bg-transparent border border-gray-300 px-4 py-3 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all placeholder-gray-500 resize-none" placeholder="Your Message*"></textarea>
+                            </div>
+                            <div className="flex justify-center mt-6">
+                                <button type="submit" className="bg-[#C1D53A] hover:bg-[#aebd29] text-white font-bold py-3 px-8 transition-colors shadow-sm text-lg uppercase">
+                                    Send Now
+                                </button>
+                            </div>
                         </form>
                     </motion.div>
                 </div>

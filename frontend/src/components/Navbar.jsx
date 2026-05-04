@@ -14,6 +14,7 @@ export default function Navbar({ openPopup }) {
     }, []);
 
     const navLinks = [
+        { name: 'Holidays', href: 'https://www.mycititours.com/', external: true },
         { name: 'Services', href: '#services' },
         { name: 'Taxi Routes', href: '#taxi' },
         { name: 'Packages', href: '#packages' },
@@ -30,9 +31,9 @@ export default function Navbar({ openPopup }) {
                 {/* Logo */}
                 <a href="#" className="flex items-center gap-3 group">
                     <img
-                        src="logo.png"
+                        src="mstlogo-final.png"
                         alt="Mycititours Logo"
-                        className={`transition-all duration-300 ${scrolled ? 'h-10 md:h-12' : 'h-12 md:h-16'} w-auto`}
+                        className={`transition-all duration-300 ${scrolled ? 'h-10 md:h-12' : 'h-15 md:h-20'} w-auto`}
                     />
                 </a>
 
@@ -42,6 +43,8 @@ export default function Navbar({ openPopup }) {
                         <a
                             key={link.name}
                             href={link.href}
+                            target={link.external ? "_blank" : "_self"}
+                            rel={link.external ? "noopener noreferrer" : ""}
                             className={`font-body text-sm uppercase tracking-wider font-bold hover:text-accent transition-colors ${scrolled ? 'text-gray-700' : 'text-white/90'
                                 }`}
                         >
@@ -72,7 +75,9 @@ export default function Navbar({ openPopup }) {
                         <a
                             key={link.name}
                             href={link.href}
-                            onClick={() => setMobileMenuOpen(false)}
+                            target={link.external ? "_blank" : "_self"}
+                            rel={link.external ? "noopener noreferrer" : ""}
+                            onClick={() => !link.external && setMobileMenuOpen(false)}
                             className="font-heading text-4xl font-semibold hover:text-accent transition-colors"
                         >
                             {link.name}

@@ -1,4 +1,4 @@
-import { MapPin, Building, Plane, Briefcase, ArrowRight } from 'lucide-react';
+import { MapPin, Building, Plane, Briefcase, ArrowRight, Users } from 'lucide-react';
 
 const services = [
     {
@@ -20,6 +20,11 @@ const services = [
         icon: Briefcase,
         title: 'Destination Management',
         description: 'Complete local logistics support including meet & greet, accommodation, transfers, and event management.',
+    },
+    {
+        icon: Users,
+        title: 'Employee Transport Services and Corporate Vehicle Rentals',
+        description: 'Myciti tours as a transportation company offering unique solutions for all your transportation needs be it corporate or individuals. For corporates we have special packages we can customise our package to suit your requirements. We are also working with leading hotels across mysore and Bangalore and are the no 1 choice for any hotels for cab services.',
     }
 ];
 
@@ -36,7 +41,7 @@ export default function Services({ openPopup }) {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-10 md:mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-10 md:mb-16">
                     {services.map((service, index) => (
                         <div
                             key={service.title}
