@@ -51,7 +51,7 @@ India 570012</span>
                         </li>
                         <li className="flex items-center gap-3">
                             <Phone className="text-primary shrink-0" size={18} />
-                            <a href="tel:+919353273108" className="text-gray-400 hover:text-white transition-colors">+91 82697 94013</a>
+                            <a href="tel:+919353273108" className="text-gray-400 hover:text-white transition-colors">+91 9353273108</a>
                         </li>
                         <li className="flex items-center gap-3">
                             <Mail className="text-primary shrink-0" size={18} />

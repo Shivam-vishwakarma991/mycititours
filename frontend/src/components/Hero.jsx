@@ -57,7 +57,7 @@ export default function Hero({ openPopup }) {
                 <a href="tel:+919353273108" className="w-14 h-14 bg-primary backdrop-blur text-white rounded-full flex items-center justify-center hover:bg-primary-light transition-colors shadow-lg border border-white/10">
                     <Phone size={24} />
                 </a>
-                <a href={`https://wa.me/919353273108?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" className="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-colors shadow-lg">
+                <a href={`https://wa.me/918431352911?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" className="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-colors shadow-lg">
                     <MessageCircle size={24} />
                 </a>
             </div>

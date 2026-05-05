@@ -473,7 +473,7 @@ Features (6, grid 3 columns):
 - Hover: scale(1.1)
 
 **Link:**
-https://wa.me/919353273108?text=Hi! I want to plan a South India trip
+https://wa.me/918431352911?text=Hi! I want to plan a South India trip
 
 **Animations:**
 - Entry: scale(0) → scale(1)

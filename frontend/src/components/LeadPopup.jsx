@@ -24,7 +24,7 @@ Email: ${details.email}
 Message: ${details.message}
 Enquiring for: ${details.destination}`;
 
-        const url = `https://wa.me/919353273108?text=${encodeURIComponent(text)}`;
+        const url = `https://wa.me/918431352911?text=${encodeURIComponent(text)}`;
         window.open(url, '_blank');
         onClose();
     };
