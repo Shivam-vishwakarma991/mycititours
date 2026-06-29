@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
+import { trackFormSubmission, trackConversion } from '../utils/tracking';
 
 export default function LeadPopup({ isOpen, onClose, data }) {
     const handleSubmit = (e) => {
@@ -13,6 +14,20 @@ export default function LeadPopup({ isOpen, onClose, data }) {
             message: formData.get('message'),
             destination: data.context || 'General Enquiry'
         };
+
+        // Track form submission
+        trackFormSubmission('Lead Enquiry', {
+            destination: details.destination,
+            city: details.city,
+        });
+
+        // Track conversion (lead generation)
+        trackConversion({
+            value: 0,
+            currency: 'INR',
+            transaction_id: `lead_${Date.now()}`,
+            event_label: details.destination,
+        });
 
         const text = `Hi, I'm interested in planning a trip with mycititours - mycititours.com.
 Please find my details below to assist :

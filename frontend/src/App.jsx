@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -8,12 +8,19 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 import LeadPopup from './components/LeadPopup';
+import { trackPageView, trackButtonClick } from './utils/tracking';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [popupData, setPopupData] = useState({ title: '', context: '' });
 
+  // Track page view on app mount
+  useEffect(() => {
+    trackPageView('MyCliTours - Home', '/');
+  }, []);
+
   const openPopup = (title = 'Enquire Now', context = '') => {
+    trackButtonClick(`Enquire Now - ${context || title}`);
     setPopupData({ title, context });
     setIsPopupOpen(true);
   };
