@@ -1,6 +1,29 @@
 import { ArrowRight, Phone, MessageCircle } from 'lucide-react';
+import { trackConversion, trackPhoneCallClick, trackWhatsAppClick } from '../utils/tracking';
 
 export default function Hero({ openPopup }) {
+    const handlePhoneClick = () => {
+        trackPhoneCallClick();
+        trackConversion({
+            value: 0,
+            currency: 'INR',
+            transaction_id: `phone_${Date.now()}`,
+            event_label: 'Floating Phone CTA',
+            event_category: 'engagement',
+        });
+    };
+
+    const handleWhatsAppClick = () => {
+        trackWhatsAppClick();
+        trackConversion({
+            value: 0,
+            currency: 'INR',
+            transaction_id: `whatsapp_${Date.now()}`,
+            event_label: 'Floating WhatsApp CTA',
+            event_category: 'engagement',
+        });
+    };
+
     return (
         <section className="relative h-screen w-full flex items-center overflow-hidden bg-primary">
             {/* Background Image & Overlay */}
@@ -54,10 +77,10 @@ export default function Hero({ openPopup }) {
 
             {/* Floating Action Icons */}
             <div className="fixed right-6 bottom-6 md:top-1/2 md:-translate-y-1/2 flex flex-col gap-4 z-50">
-                <a href="tel:+919353273108" className="w-14 h-14 bg-primary backdrop-blur text-white rounded-full flex items-center justify-center hover:bg-primary-light transition-colors shadow-lg border border-white/10">
+                <a href="tel:+919353273108" onClick={handlePhoneClick} className="w-14 h-14 bg-primary backdrop-blur text-white rounded-full flex items-center justify-center hover:bg-primary-light transition-colors shadow-lg border border-white/10">
                     <Phone size={24} />
                 </a>
-                <a href={`https://wa.me/918431352911?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" className="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-colors shadow-lg">
+                <a href={`https://wa.me/918431352911?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" onClick={handleWhatsAppClick} className="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-colors shadow-lg">
                     <MessageCircle size={24} />
                 </a>
             </div>

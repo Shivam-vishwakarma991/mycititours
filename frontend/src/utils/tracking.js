@@ -6,6 +6,9 @@
  * Conversion Label: -FPSCI693sQcEMKe3_Eo
  */
 
+const CONVERSION_ID = 'AW-10975956802';
+const CONVERSION_LABEL = '-FPSCI693sQcEMKe3_Eo';
+
 // Ensure gtag is available
 const getGtag = () => {
   if (typeof window !== 'undefined' && window.gtag) {
@@ -51,12 +54,15 @@ export const trackPageView = (pageTitle, pagePath) => {
 export const trackConversion = (conversionData = {}) => {
   const gtag = getGtag();
   if (gtag) {
-    gtag('event', 'purchase', {
+    const payload = {
+      send_to: `${CONVERSION_ID}/${CONVERSION_LABEL}`,
       value: conversionData.value || 0,
       currency: conversionData.currency || 'INR',
       transaction_id: conversionData.transaction_id || '',
       ...conversionData,
-    });
+    };
+
+    gtag('event', 'conversion', payload);
   }
 };
 

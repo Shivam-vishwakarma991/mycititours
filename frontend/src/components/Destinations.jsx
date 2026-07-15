@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { destinations } from '../data/mock';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
+import { trackButtonClick, trackConversion } from '../utils/tracking';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,6 +12,17 @@ export default function Destinations() {
     const containerRef = useRef(null);
     const destinationsRef = useRef(null);
     const [activeModal, setActiveModal] = useState(null);
+
+    const handleDestinationAction = (label) => {
+        trackButtonClick(label);
+        trackConversion({
+            value: 0,
+            currency: 'INR',
+            transaction_id: `destination_${Date.now()}`,
+            event_label: label,
+            event_category: 'engagement',
+        });
+    };
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -73,7 +85,10 @@ export default function Destinations() {
                             key={dest.id}
                             className="destination-card w-[80vw] sm:w-[45vw] md:w-[30vw] h-[60vh] md:h-[70vh] rounded-3xl overflow-hidden relative group shrink-0 cursor-pointer"
                             data-cursor="view"
-                            onClick={() => setActiveModal(dest)}
+                            onClick={() => {
+                                setActiveModal(dest);
+                                handleDestinationAction(`Destination Card - ${dest.name}`);
+                            }}
                         >
                             {/* Image Container with Parallax */}
                             <div className="absolute inset-0 w-full h-full overflow-hidden rounded-3xl">
@@ -111,7 +126,7 @@ export default function Destinations() {
             </div>
 
             <div className="text-center mt-12 md:mt-24">
-                <a href={`https://wa.me/918431352911?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" className="inline-block bg-transparent border-2 border-forest text-forest px-8 md:px-10 py-3 md:py-4 rounded-full font-body font-semibold uppercase tracking-wider hover:bg-forest hover:text-sand transition-colors duration-300">
+                <a href={`https://wa.me/918431352911?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" onClick={() => handleDestinationAction('Customize Your Itinerary')} className="inline-block bg-transparent border-2 border-forest text-forest px-8 md:px-10 py-3 md:py-4 rounded-full font-body font-semibold uppercase tracking-wider hover:bg-forest hover:text-sand transition-colors duration-300">
                     Customize Your Itinerary
                 </a>
             </div>
@@ -151,7 +166,10 @@ export default function Destinations() {
 
                             <a
                                 href="#packages"
-                                onClick={() => setActiveModal(null)}
+                                onClick={() => {
+                                    setActiveModal(null);
+                                    handleDestinationAction('Destination Modal Close');
+                                }}
                                 className="block w-full text-center bg-forest text-sand py-4 rounded-xl font-bold tracking-wide hover:bg-terracotta transition-colors shadow-lg shadow-forest/20"
                             >
                                 View Applicable Packages

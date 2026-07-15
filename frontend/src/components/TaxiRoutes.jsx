@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Navigation, Plane, Search, ChevronDown, ShieldCheck, Clock, Zap, Calendar } from 'lucide-react';
+import { trackConversion, trackFormSubmission } from '../utils/tracking';
 
 const taxiOptions = {
     cities: ["Bangalore City", "Bangalore Airport", "Madikeri", "Mangalore", "Mangalore Airport", "Mysore"],
@@ -23,6 +24,21 @@ export default function TaxiRoutes() {
         e.preventDefault();
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData.entries());
+
+        trackFormSubmission(`Taxi Search - ${type}`, {
+            form_type: type,
+            ...data,
+        });
+
+        trackConversion({
+            value: 0,
+            currency: 'INR',
+            transaction_id: `taxi_${type}_${Date.now()}`,
+            event_label: `Taxi Search - ${type}`,
+            event_category: 'engagement',
+            form_type: type,
+            ...data,
+        });
 
         let message = `Hi Mycititours, I want to book a taxi.\n\n*Type:* ${type}\n`;
 
