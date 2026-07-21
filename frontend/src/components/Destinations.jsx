@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { destinations } from '../data/mock';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
-import { trackButtonClick, trackConversion } from '../utils/tracking';
+import { trackButtonClick } from '../utils/tracking';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,13 +15,6 @@ export default function Destinations() {
 
     const handleDestinationAction = (label) => {
         trackButtonClick(label);
-        trackConversion({
-            value: 0,
-            currency: 'INR',
-            transaction_id: `destination_${Date.now()}`,
-            event_label: label,
-            event_category: 'engagement',
-        });
     };
 
     useEffect(() => {

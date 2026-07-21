@@ -8,7 +8,7 @@ export default function Hero({ openPopup }) {
             value: 0,
             currency: 'INR',
             transaction_id: `phone_${Date.now()}`,
-            event_label: 'Floating Phone CTA',
+            event_label: 'Phone CTA',
             event_category: 'engagement',
         });
     };
@@ -19,7 +19,7 @@ export default function Hero({ openPopup }) {
             value: 0,
             currency: 'INR',
             transaction_id: `whatsapp_${Date.now()}`,
-            event_label: 'Floating WhatsApp CTA',
+            event_label: 'WhatsApp CTA',
             event_category: 'engagement',
         });
     };

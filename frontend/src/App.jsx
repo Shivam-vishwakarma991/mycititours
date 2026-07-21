@@ -8,7 +8,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 import LeadPopup from './components/LeadPopup';
-import { trackPageView, trackButtonClick, trackConversion } from './utils/tracking';
+import { trackPageView, trackButtonClick } from './utils/tracking';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -22,13 +22,6 @@ function App() {
   const openPopup = (title = 'Enquire Now', context = '') => {
     const buttonName = `Enquire Now - ${context || title}`;
     trackButtonClick(buttonName);
-    trackConversion({
-      value: 0,
-      currency: 'INR',
-      transaction_id: `cta_${Date.now()}`,
-      event_label: buttonName,
-      event_category: 'engagement',
-    });
     setPopupData({ title, context });
     setIsPopupOpen(true);
   };
