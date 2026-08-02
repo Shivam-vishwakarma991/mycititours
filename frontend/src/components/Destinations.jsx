@@ -4,7 +4,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { destinations } from '../data/mock';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
-import { trackButtonClick } from '../utils/tracking';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,9 +12,7 @@ export default function Destinations() {
     const destinationsRef = useRef(null);
     const [activeModal, setActiveModal] = useState(null);
 
-    const handleDestinationAction = (label) => {
-        trackButtonClick(label);
-    };
+    const handleDestinationAction = () => {};
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -80,7 +77,7 @@ export default function Destinations() {
                             data-cursor="view"
                             onClick={() => {
                                 setActiveModal(dest);
-                                handleDestinationAction(`Destination Card - ${dest.name}`);
+                                handleDestinationAction();
                             }}
                         >
                             {/* Image Container with Parallax */}
@@ -119,7 +116,7 @@ export default function Destinations() {
             </div>
 
             <div className="text-center mt-12 md:mt-24">
-                <a href={`https://wa.me/918431352911?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" onClick={() => handleDestinationAction('Customize Your Itinerary')} className="inline-block bg-transparent border-2 border-forest text-forest px-8 md:px-10 py-3 md:py-4 rounded-full font-body font-semibold uppercase tracking-wider hover:bg-forest hover:text-sand transition-colors duration-300">
+                <a href={`https://wa.me/918431352911?text=${encodeURIComponent(`Hi, I'm interested in planning a trip with mycititours - mycititours.com.\nPlease find my details below to assist :\n\nName: \nNumber of Travelers:\nTravel Date:\nDuration: \nDestination: `)}`} target="_blank" rel="noreferrer" onClick={() => handleDestinationAction()} className="inline-block bg-transparent border-2 border-forest text-forest px-8 md:px-10 py-3 md:py-4 rounded-full font-body font-semibold uppercase tracking-wider hover:bg-forest hover:text-sand transition-colors duration-300">
                     Customize Your Itinerary
                 </a>
             </div>
@@ -161,7 +158,7 @@ export default function Destinations() {
                                 href="#packages"
                                 onClick={() => {
                                     setActiveModal(null);
-                                    handleDestinationAction('Destination Modal Close');
+                                    handleDestinationAction();
                                 }}
                                 className="block w-full text-center bg-forest text-sand py-4 rounded-xl font-bold tracking-wide hover:bg-terracotta transition-colors shadow-lg shadow-forest/20"
                             >
