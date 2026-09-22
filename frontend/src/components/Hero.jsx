@@ -1,27 +1,13 @@
 import { ArrowRight, Phone, MessageCircle } from 'lucide-react';
-import { trackConversion, trackPhoneCallClick, trackWhatsAppClick } from '../utils/tracking';
+import { trackPhoneCallClick, trackWhatsAppClick } from '../utils/tracking';
 
 export default function Hero({ openPopup }) {
     const handlePhoneClick = () => {
         trackPhoneCallClick();
-        trackConversion({
-            value: 0,
-            currency: 'INR',
-            transaction_id: `phone_${Date.now()}`,
-            event_label: 'Phone CTA',
-            event_category: 'engagement',
-        });
     };
 
     const handleWhatsAppClick = () => {
         trackWhatsAppClick();
-        trackConversion({
-            value: 0,
-            currency: 'INR',
-            transaction_id: `whatsapp_${Date.now()}`,
-            event_label: 'WhatsApp CTA',
-            event_category: 'engagement',
-        });
     };
 
     return (

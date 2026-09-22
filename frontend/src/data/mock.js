@@ -7,8 +7,8 @@ export const tourCategories = [
         id: 'MysoreOneDayCityTourPrivateVehicleFourPersonMaxbySedan',
         name: 'Mysore One Day City Tour Private Vehicle (Max 4 Persons by Sedan)',
         duration: '1 Day Tour',
-        price: '₹625',
-        image: 'https://images.unsplash.com/photo-1588661704285-d7fb9d6f35ad?q=80&w=2070',
+        price: '₹2800 All inclusive',
+        image: 'https://www.tripplannersindia.com/assets/blog/images/placestovisitinmysore/Mysore_Palace.webp',
         inclusions: [
           'Full-day Mysore Local Sightseeing Tour',
           'Tour by Private Cab (not shared)',
@@ -23,32 +23,13 @@ export const tourCategories = [
           }
         ]
       },
-      {
-        id: 'MysoreOneDayCityTourGroupTour',
-        name: 'Mysore One Day City Tour Group Tour',
-        duration: '1 Day Tour',
-        price: '₹400',
-        image: 'https://images.unsplash.com/photo-1598091383021-15ddea10925d?q=80&w=2070',
-        inclusions: [
-          'Economical Group Sightseeing',
-          'Shared AC Bus/Van',
-          'Fixed Itinerary',
-          'Covers all major Mysore landmarks',
-          'Experienced Guide/Driver'
-        ],
-        itinerary: [
-          {
-            title: 'Group City Tour',
-            desc: 'Join our economical group tour covering all major attractions in Mysore including the Palace, Zoo, and Brindavan Gardens. Perfect for solo travelers and small groups.'
-          }
-        ]
-      },
+
       {
         id: 'MysoreCoorgTourPackagePrivateCabSedan',
         name: 'Mysore Coorg Tour Package (Private Cab Sedan)',
         duration: '3 Days',
-        price: '₹10,000',
-        image: 'https://images.unsplash.com/photo-1623910271000-4ea0f6eeabfb?q=80&w=2070',
+        price: '₹10,800',
+        image: 'https://i0.wp.com/oneday.tours/wp-content/uploads/one-day-mysore-to-coorg-sightseeing-tour-package-talakavery.jpg?ssl=1',
         inclusions: [
           'Private Sedan for 3 Days',
           'Inter-city Transfers',
@@ -76,7 +57,7 @@ export const tourCategories = [
         name: 'Mysore Ooty Coonoor Sightseeing',
         duration: '3 Days',
         price: '₹12,000',
-        image: 'https://images.unsplash.com/photo-1544256221-dbb153b81eb7?q=80&w=2070',
+        image: 'https://www.clubmahindra.com/blog/media/section_images/placestovi-3f695cfa9e0a223.jpg',
         inclusions: [
           'Private Cab for 3 Days',
           'Visit to Bandipur Forest',

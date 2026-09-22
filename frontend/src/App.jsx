@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -12,16 +12,38 @@ import { trackPageView } from './utils/tracking';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [popupData, setPopupData] = useState({ title: '', context: '' });
+  const [popupData, setPopupData] = useState({ title: 'Get Your Trip Quote', context: 'Landing Page Lead' });
+  const popupTimerRef = useRef(null);
 
   // Track page view on app mount
   useEffect(() => {
     trackPageView('MyCliTours - Home', '/');
+
+    popupTimerRef.current = window.setTimeout(() => {
+      setIsPopupOpen(true);
+    }, 1200);
+
+    return () => {
+      window.clearTimeout(popupTimerRef.current);
+    };
   }, []);
 
   const openPopup = (title = 'Enquire Now', context = '') => {
+    window.clearTimeout(popupTimerRef.current);
     setPopupData({ title, context });
     setIsPopupOpen(true);
+  };
+
+  const closePopup = (reason = 'dismissed') => {
+    setIsPopupOpen(false);
+    window.clearTimeout(popupTimerRef.current);
+
+    if (reason !== 'submitted') {
+      popupTimerRef.current = window.setTimeout(() => {
+        setPopupData({ title: 'Get Your Trip Quote', context: '' });
+        setIsPopupOpen(true);
+      }, 10000);
+    }
   };
 
   return (
@@ -38,7 +60,7 @@ function App() {
       <Footer />
       <LeadPopup
         isOpen={isPopupOpen}
-        onClose={() => setIsPopupOpen(false)}
+        onClose={closePopup}
         data={popupData}
       />
     </div>
